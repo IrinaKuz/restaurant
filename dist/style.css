@@ -35,7 +35,8 @@ p{
 .container{
     width: 80%;
     margin: auto;
-    padding-bottom: 1em 1em 100px 1em;
+    padding: 4em 1em 1em 1em;
+    overflow: auto;
 }
 #mobile_nav{
     text-align: right;
@@ -63,7 +64,6 @@ nav li:hover{
     color: black;
 }
 header{
-    margin: 3em 0;
     text-align: center;
     color:black;
 }
@@ -92,7 +92,6 @@ header img{
 @media all and (min-width: 1000px) {
     body{
         width: 80%;
-        height: 100vh;
         margin: auto;
     }
 }
