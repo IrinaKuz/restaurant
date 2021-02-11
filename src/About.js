@@ -3,7 +3,7 @@ function load_about(container) {
         container.innerText = '';
     }
     const h1 = document.createElement('h1');
-    h1.innerHTML = 'About &ldquo;The Breakfast Club&rdquo;';
+    h1.innerHTML = 'About <span class="emp">The Breakfast Club</span>';
     container.appendChild(h1);
 
     const p = document.createElement('p');

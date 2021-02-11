@@ -18,6 +18,11 @@ function load_nav(container) {
     if(container.innerText !== '') {
         return;
     }
+    const mobile_nav = document.createElement('div');
+    mobile_nav.innerHTML = '&#9776;';
+    mobile_nav.setAttribute('id', 'mobile_nav');
+    container.appendChild(mobile_nav);
+
     const arr_li = ['Home', 'Menu', 'About', 'Contact'];
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
@@ -29,6 +34,10 @@ function load_nav(container) {
     }
     nav.appendChild(ul);
     container.appendChild(nav);
+
+    mobile_nav.addEventListener('click', function() {
+        nav.classList.toggle('open');
+    })
 }
 
 export default load_nav;
