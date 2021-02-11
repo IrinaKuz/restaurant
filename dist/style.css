@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6{
 ul {
     list-style: none;
 }
+p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 #content > div{
     width: 80%;
     margin: auto;
